@@ -26,7 +26,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                              <form action="./registro.php" method : 'post' id="form"> 
+                              <form action="registro.php" method="POST" id="form"> 
                             <div class="container px-2">
                               <div class="row gx-2">
                                 <div class="col">
@@ -64,49 +64,49 @@
                           <div class="mb-3 text-start">
                                 <div class="text-center"><h5>lenguajes de programacion </h5></div>
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
                               <label class="form-check-label" for="flexCheckDefault">
                                 Html
                               </label>
                                 </div>
 
                                 <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 Python
                               </label>
                             </div>
 
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 Css
                               </label>
                             </div>
 
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="4" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 Javascript
                               </label>
                             </div>
 
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="5" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 Typescript
                               </label>
                             </div>
 
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="6" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 C#
                               </label>
                             </div>
 
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <input class="form-check-input" type="checkbox" value="7" id="flexCheckChecked" name="lenguajes[]" checked>
                               <label class="form-check-label" for="flexCheckChecked">
                                 Node js
                               </label>
@@ -117,16 +117,27 @@
 
                           <div class="mb-3">
                             <h5>nivel de ingles</h5>
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" name= "ingles">
+                                <input type="radio" class="btn-check" name="btnradio" name="basico" id="btnradio1" autocomplete="off" checked>
                                 <label class="btn btn-outline-primary" for="btnradio1">BASICO</label>
 
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <input type="radio" class="btn-check" name="btnradio" name="intermedio" id="btnradio2" autocomplete="off">
                                 <label class="btn btn-outline-primary" for="btnradio2">INTERMEDIO</label>
 
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <input type="radio" class="btn-check" name="btnradio" name="avanzado" id="btnradio3" autocomplete="off">
                                 <label class="btn btn-outline-primary" for="btnradio3">AVANZADO</label>
                             </div>
+                          </div>
+
+                          <div class="mb-3">
+                              <select class="form-select" aria-label="Default select example">
+                              <option selected>Nivel academico</option>
+                              <option value="1">Bachiller</option>
+                              <option value="2">Tecnico</option>
+                              <option value="3">Tecnologico</option>
+                              <option value="4">profesional</option>
+                              <option value="5">Estudiante universitario</option>
+                              </select>
                           </div>
 
                           <button type="submit" value="registrar"  class="btn btn-success fs-5 w-100">Registrate</button>
