@@ -20,20 +20,20 @@
                 <!-- Modal -->
                 <div class="modal fade" id="SIGNIN" tabindex="-1" aria-labelledby="SIGNINLabel" aria-hidden="true">
                   <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content bg-dark text-light">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="SIGNINLabel">SIGN IN</h5>
+                        <h5 class="modal-title" id="SIGNINLabel">Registrate</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
-                              <form action="./registro.php"> 
+                              <form action="./registro.php" method : 'post' id="form"> 
                             <div class="container px-2">
                               <div class="row gx-2">
                                 <div class="col">
                                  <div class="p-1 ">
                                     <div class="mb-3">
-                                      <label for="exampleInputEmail1" class="form-label">NOMBRES</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="daniel felipe">
+                                      <label for="nombres" class="form-label">NOMBRES</label>
+                                      <input type="tetx" class="form-control" id="nombres" name ="nombres"  placeholder="daniel felipe">
                                       
                                     </div>
                                  </div>
@@ -41,20 +41,95 @@
                                 <div class="col">
                                   <div class="p-1 ">
                                     <div class="mb-3">
-                                      <label for="exampleInputEmail1" class="form-label">APELLIDOS</label>
-                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="asencio martinez">
+                                      <label for="apellidos" class="form-label">APELLIDOS</label>
+                                      <input type="text" class="form-control" id="apellidos" name="apellidos"  placeholder="asencio martinez">
                                       
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+
                             <div class="mb-3">
+                                      <label for="correo" class="form-label">correo</label>
+                                      <input type="email" class="form-control" id="correo" name="correo"  placeholder="asencio martinez">
+                                    </div>
+
+
+                            <div class="mb-3" >
                             <label for="telefono" class="form-label">Telefono de contacto</label>
-                            <input type="email" class="form-control" id="telefono" aria-describedby="emailHelp" name="telefono" placeholder ="311022500">
+                            <input type="tel" class="form-control" id="telefono" name="telefono"  name="telefono" placeholder ="311022500">
                           </div>
 
-                          <button type="submit" value="registrar"  class="btn btn-success fs-5 w-100">SIGN IN</button>
+                          <div class="mb-3 text-start">
+                                <div class="text-center"><h5>lenguajes de programacion </h5></div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Html
+                              </label>
+                                </div>
+
+                                <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Python
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Css
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Javascript
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Typescript
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                C#
+                              </label>
+                            </div>
+
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                              <label class="form-check-label" for="flexCheckChecked">
+                                Node js
+                              </label>
+                            </div>
+
+
+                          </div>
+
+                          <div class="mb-3">
+                            <h5>nivel de ingles</h5>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">BASICO</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">INTERMEDIO</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio3">AVANZADO</label>
+                            </div>
+                          </div>
+
+                          <button type="submit" value="registrar"  class="btn btn-success fs-5 w-100">Registrate</button>
                         </form> 
                       </div>
                       <div class="modal-footer">
