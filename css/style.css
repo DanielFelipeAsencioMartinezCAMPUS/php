@@ -3,5 +3,12 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color:aliceblue
+    color:aliceblue;
+}
+.contepadre{
+    padding-top: 100px;
+    max-width: 50em;
+    height: 10vh;
+    margin: auto;
+    color:rgb(25, 41, 18);
 }

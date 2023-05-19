@@ -117,15 +117,12 @@
 
                           <div class="mb-3">
                             <h5>nivel de ingles</h5>
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" name= "ingles">
-                                <input type="radio" class="btn-check" name="btnradio" name="basico" id="btnradio1" autocomplete="off" checked>
-                                <label class="btn btn-outline-primary" for="btnradio1">BASICO</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" name="intermedio" id="btnradio2" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btnradio2">INTERMEDIO</label>
-
-                                <input type="radio" class="btn-check" name="btnradio" name="avanzado" id="btnradio3" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btnradio3">AVANZADO</label>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <select name="niveling" id="">
+                                <option value="1">basico</option>
+                                <option value="2">intermedio</option>
+                                <option value="3">avanzado</option>
+                            </select>
                             </div>
                           </div>
 
@@ -141,6 +138,7 @@
                           </div>
 
                           <button type="submit" value="registrar"  class="btn btn-success fs-5 w-100">Registrate</button>
+                          <button type="reset" value="reset"  class="btn btn-danger fs-5 w-100 mt-3">limpiar</button>
                         </form> 
                       </div>
                       <div class="modal-footer">
