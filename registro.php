@@ -24,10 +24,7 @@
              $lenguages = $_REQUEST['lenguajes'];
              $ingles = $_REQUEST['niveling'];
 
-             if(count($lenguages) <= 0){
-                echo'<p>no has sido admitido</>p';
-             }
-             elseif(count($lenguages) <= 2 && count($lenguages) > 0 &&  $ingles == '1' ) {
+             if(count($lenguages) <= 2 && count($lenguages) > 0 &&  $ingles == '1' ) {
                  echo'<h1>FELICIDADES HAZ SIDO ADMITIDO</h1>';
                  echo'<br/>';
                  echo'Hola ', $nombre , $apellidos , ' tienes ', count($lenguages) , ' lenguajes de programacion ademas de cierto nivel de ingles por tanto eres aceptado en apolo' ;
